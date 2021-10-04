@@ -137,7 +137,7 @@ i.header-icon__shop.fas.fa-shopping-cart{
 
 
 .footer{
-    display: none;
+    display: block;
 }
 .footer__end-icon-list{
     padding-top:16px;
@@ -165,8 +165,7 @@ i.header-icon__shop.fas.fa-shopping-cart{
 .conten__body-icon-list {
     list-style: none;
     padding: 0;
-    display: none;
-    /* display:flex: ; */
+    display: flex;
     justify-content: space-around;
     padding: 16px;
     background-color: #9797a3;
@@ -275,4 +274,53 @@ i.header-icon__shop.fas.fa-shopping-cart{
 .quick-view:hover{
     color: black;
     background-color: #fff;
+}
+.conten-end{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 40px;
+}
+.conten-end__img{
+}
+.conten-end__img-link{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    overflow: hidden;
+}
+.conten-end-text{
+    width: 400px;
+
+}
+
+.conten-end-text__big{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 4rem;
+
+}
+
+.conten-end-text__smail{
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
+}
+.conten-end-text__smail1{
+    margin-top:15px ;
+    
+    line-height: 2.9rem;
+}
+
+.conten-end-btn{
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    margin-top: 16px;
+    transition: 0.25s;
+}
+
+.conten-end-btn:hover{
+    background-color: #333;
+    color: white;
 }
