@@ -1,0 +1,278 @@
+.header{
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgb(64 87 109 / 7%);
+}
+.nav{
+    max-width: 100%;
+    height: 72px;
+    display: flex;
+}
+.nav__logo{
+    width: 180px;
+    object-fit: contain;
+    border-radius: 32px;
+}
+.nav__item-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.nav__item a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #4e5256
+}
+.nav__item{
+    padding:8px;
+}
+.nav__item:hover{
+    background-color: rgba(64,87,109,.07);
+    border-radius: 4px;
+    transition: background-color linear 0.2s;
+}
+.header-search{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    position: relative ;
+}
+.header-search__input{
+    height: 40px;
+    width: 100%; 
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.6rem;
+    padding-left: 46px;
+    border: 1px solid #ccc;
+    opacity: 0.6;
+}
+.header-search__icon{
+    position: relative;
+    left: 33px;
+    z-index: 1;
+    font-size: 18px;
+}
+.header-icon{
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+i.header-icon__user.fas.fa-user {
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+i.header-icon__shop.fas.fa-shopping-cart{
+    font-size: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    opacity: 0.6;
+}
+
+
+
+.footer{
+    border-top: 1px solid #ccc ;
+    background-color: #a6a6b4;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+.footer-list__item{
+    width: 144px;
+}
+
+.footer-list__item-text{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 16px;
+}
+.about-text{
+
+    font-size:1.4rem;
+    color: #fff;
+}
+.latest-list{
+    list-style: none;
+    padding: 0;
+}
+
+.latest-list__item{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding:8px 0 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.latest-list__item-box{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 1.4rem;
+    opacity: 0.9;
+    text-align: center;
+}
+.latest-list__item-text{
+    color: #fff;
+    opacity: 0.9;
+    font-size: 1.4rem;
+    padding-left: 16px;
+}
+
+
+.footer{
+    display: none;
+}
+.footer__end-icon-list{
+    padding-top:16px;
+}
+.footer__end-icon-list-item-icon{
+    color: #fff;
+}
+.tag-list{
+    padding: 0;
+    list-style: none;
+
+}
+.tag-item{
+    color: #fff;
+    opacity: 0.9;
+    padding: 4px;
+    border: 1px solid #fff;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline-block;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.conten__body-icon-list {
+    list-style: none;
+    padding: 0;
+    display: none;
+    /* display:flex: ; */
+    justify-content: space-around;
+    padding: 16px;
+    background-color: #9797a3;
+}
+.conten__body-icon-item{
+    height: 48px;
+}
+
+.conten-brimg{
+    width: 100%;
+    overflow: hidden;
+}
+.conten-body-tag1{
+    margin-top: 20px;
+}
+.conten-header{
+    display: flex;
+    justify-content: center;
+    font-size: 2.7rem;
+    padding: 23px 0 23px 0;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.conten-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0;
+    list-style: none;
+    grid-row-gap: 50px;
+}
+.conten-list__item{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.bg-one{
+    background-image: url(/assets/img/unisex-tri-blend-t-shirt-white-fleck-triblend-front-601c41cc87803_2000x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 380px;
+    position: relative;
+}
+
+.conten-list__item-container:hover .child:before,
+.conten-list__item-container:focus .child:before {
+  display: block;
+}
+.conten-list__item-container:hover .quick-view{
+    display: block;
+}
+.conten-list__item-container{
+    animation: FadeIn linear 1s;
+}
+.conten-list__item-container:hover span,
+.conten-list__item-container:focus span {
+  display: block;
+}
+.child:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(76, 76, 76,0.7);
+    animation: FadeIn linear 0.3s;
+}
+.conten-list__item-text{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333333;
+    margin: 5px;
+}
+.conten-list__item-money{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #03a196;
+    margin:5px;
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.quick-view{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-size: 1.6rem;
+    z-index: 2 ;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.25s;
+    display: none;
+}
+.quick-view:hover{
+    color: black;
+    background-color: #fff;
+}
